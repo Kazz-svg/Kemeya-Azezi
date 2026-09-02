@@ -29,8 +29,34 @@
   <div class="wrap">
     <p class="crumbs"><a href="/">Home</a> / Contact</p>
     <h1>Contact</h1>
-    <p>This site doesn't have a contact form yet — that's coming soon. In the meantime, reach out through the platforms linked below once they're live, or check back here shortly for a direct way to get in touch.</p>
-    <p><!-- TODO(Kemeya): add a public contact method here — an email address you're comfortable publishing, or links to social profiles once created. --></p>
+    <p>Send a message using the form below — no email address is published, and it comes straight to me.</p>
+
+    <!--
+      TODO(Kemeya): this form uses Formspree (formspree.io), a free service
+      that emails form submissions to you without putting your address on
+      the page. To activate it:
+        1. Sign up free at https://formspree.io with the email you want
+           submissions sent to, and confirm your email.
+        2. Create a new form in the Formspree dashboard — it will give you
+           an endpoint like https://formspree.io/f/abc1234.
+        3. Replace the action="" value below with that exact URL.
+      Until you do this, the form will not actually send anywhere.
+    -->
+    <form class="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your email</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="text" name="_gotcha" class="honeypot-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <button type="submit">Send</button>
+    </form>
+    <p class="form-note">Messages are sent privately — nothing submitted here is published on the site.</p>
   </div>
 </main>
 

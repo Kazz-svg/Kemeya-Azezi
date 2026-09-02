@@ -245,6 +245,59 @@ footer.site-footer a:hover { color: var(--accent-dark); }
 }
 .crumbs a { color: var(--ink-soft); }
 
+/* Contact form */
+.contact-form {
+  max-width: 480px;
+  margin-top: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  margin-bottom: 0.3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 1rem;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form button {
+  font: inherit;
+  font-size: 1rem;
+  background: var(--accent-dark);
+  color: var(--paper);
+  border: none;
+  padding: 0.65rem 1.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover { background: var(--accent); }
+
+.honeypot-field { position: absolute; left: -9999px; }
+
+.form-note {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
 @media (max-width: 640px) {
   body { font-size: 16.5px; }
   .hero h1 { font-size: 1.9rem; }
