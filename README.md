@@ -1,11 +1,18 @@
 # Kemeya Azezi
 
-Source for [kemeyaazezi.com](https://kemeyaazezi.com) — a personal,
-non-commercial site about the origins, culture and science of tea (and a
-bit of coffee), written by Kemeya Azezi.
+Source for [kemeyaazezi.com](https://kemeyaazezi.com) — a reference site
+about the origins, culture and science of tea (and coffee), written by
+Kemeya Azezi.
 
-Nothing on this site is for sale. There's no build step: it's plain HTML
-and CSS, so any page can be opened directly in a browser or edited by hand.
+There's no build step: it's plain HTML and CSS, so any page can be opened
+directly in a browser or edited by hand.
+
+The site intentionally avoids first-person "about me" framing in its
+visible copy (no "Hello, I'm...", no location-heavy taglines) — identity
+signals for search live in structured data (JSON-LD `Person`/`ProfilePage`
+on Home/About) and in substantive content (the Brussels section on the
+Europe page) rather than in stated-outright prose. Keep that pattern when
+adding new copy.
 
 ## Structure
 
@@ -21,9 +28,8 @@ blog/                     Blog index + posts
 continents/                One page per continent's tea culture
   asia.html, africa.html, europe.html, north-america.html,
   south-america.html, oceania.html
-fr/                        French versions (index.html, about.html,
-  continents/europe.html) — see "Languages" below
-nl/                        Dutch versions, same three pages as fr/
+fr/                        French versions of every page above
+nl/                        Dutch versions of every page above
 assets/css/style.css       Shared stylesheet
 sitemap.xml, robots.txt, CNAME, 404.html   SEO / hosting files
 ```
@@ -86,13 +92,9 @@ redeploys the live site automatically — no further steps needed.
   directly with searches for that name.
 - The Europe continent page has a dedicated Brussels section — the main
   on-page signal for "kemeya azezi brussels" searches.
-- French and Dutch versions of Home, About and the Europe page live under
-  `/fr/` and `/nl/` (Brussels' two official languages). Every English,
-  French and Dutch version of these three pages cross-links via
-  `hreflang` tags, and each page carries a small EN/FR/NL switcher in the
-  header. All other pages (Tea, Coffee, other continents, blog,
-  specialists, science) are still English-only — translating those is a
-  natural next step, in the same `/fr/` and `/nl/` pattern.
+- Every page has a French (`/fr/`) and Dutch (`/nl/`) version — Brussels'
+  two official languages. Every EN/FR/NL trio cross-links via `hreflang`
+  tags, and each page carries a small EN/FR/NL switcher in the header.
 
 ## Contact form
 
@@ -113,6 +115,6 @@ Until step 3 is done, the form is visible but won't send anywhere.
 ## Open items
 
 - Wire up the contact form (see above).
-- Once the site is live and you're happy with it, set up matching social
-  profiles (Instagram, etc.) and link them from the site (and vice versa)
-  to reinforce identity signals for the name search.
+- Add links to existing social profiles (YouTube, Substack, Twitter/X)
+  once handles/URLs are confirmed. Placeholder `TODO(Kemeya)` comments
+  mark where they go on `about.html` and its `/fr/` and `/nl/` versions.
