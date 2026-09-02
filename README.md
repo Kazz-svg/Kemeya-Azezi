@@ -21,6 +21,9 @@ blog/                     Blog index + posts
 continents/                One page per continent's tea culture
   asia.html, africa.html, europe.html, north-america.html,
   south-america.html, oceania.html
+fr/                        French versions (index.html, about.html,
+  continents/europe.html) — see "Languages" below
+nl/                        Dutch versions, same three pages as fr/
 assets/css/style.css       Shared stylesheet
 sitemap.xml, robots.txt, CNAME, 404.html   SEO / hosting files
 ```
@@ -83,9 +86,13 @@ redeploys the live site automatically — no further steps needed.
   directly with searches for that name.
 - The Europe continent page has a dedicated Brussels section — the main
   on-page signal for "kemeya azezi brussels" searches.
-- Currently English-only. French/Dutch versions of the highest-priority
-  pages (Home, About, Europe) are the natural next step, since Brussels
-  is officially bilingual.
+- French and Dutch versions of Home, About and the Europe page live under
+  `/fr/` and `/nl/` (Brussels' two official languages). Every English,
+  French and Dutch version of these three pages cross-links via
+  `hreflang` tags, and each page carries a small EN/FR/NL switcher in the
+  header. All other pages (Tea, Coffee, other continents, blog,
+  specialists, science) are still English-only — translating those is a
+  natural next step, in the same `/fr/` and `/nl/` pattern.
 
 ## Contact form
 

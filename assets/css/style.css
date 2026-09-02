@@ -70,6 +70,27 @@ header.site-header {
   color: var(--ink-soft);
 }
 
+.lang-switch {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  align-items: center;
+}
+
+.lang-switch a {
+  text-decoration: none;
+  color: var(--ink-soft);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
+.lang-switch a[aria-current="true"] {
+  color: var(--accent-dark);
+  font-weight: 700;
+  background: var(--paper);
+}
+
 nav.main-nav ul {
   list-style: none;
   display: flex;
