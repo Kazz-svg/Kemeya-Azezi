@@ -205,6 +205,14 @@ blockquote {
   color: var(--ink-soft);
 }
 
+/* Article header image */
+.post-hero-img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin: 1.25rem 0;
+}
+
 /* Post / article list */
 .post-list { list-style: none; margin: 0; padding: 0; }
 .post-list li {
