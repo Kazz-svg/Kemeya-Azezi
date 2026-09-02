@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Kemeya Azezi</title>
+<meta name="description" content="Neem contact op met Kemeya Azezi.">
+<link rel="canonical" href="https://kemeyaazezi.com/nl/contact.html">
+<link rel="alternate" hreflang="en" href="https://kemeyaazezi.com/contact.html">
+<link rel="alternate" hreflang="fr" href="https://kemeyaazezi.com/fr/contact.html">
+<link rel="alternate" hreflang="nl" href="https://kemeyaazezi.com/nl/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://kemeyaazezi.com/contact.html">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/nl/">Kemeya Azezi<span class="sub">Thee &amp; koffie, oorsprong &amp; wetenschap</span></a>
+    <nav class="main-nav" aria-label="Hoofdmenu">
+      <ul>
+        <li><a href="/nl/">Home</a></li>
+        <li><a href="/nl/about.html">Over</a></li>
+        <li><a href="/nl/tea/">Thee</a></li>
+        <li><a href="/nl/coffee/">Koffie</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/nl/contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" aria-label="Taal">
+      <a href="/contact.html">EN</a>
+      <a href="/fr/contact.html">FR</a>
+      <a href="/nl/contact.html" aria-current="true">NL</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="crumbs"><a href="/nl/">Home</a> / Contact</p>
+    <h1>Contact</h1>
+    <p>Stuur een bericht via onderstaand formulier — er wordt geen e-mailadres gepubliceerd, en het komt rechtstreeks bij mij terecht.</p>
+
+    <form class="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+      <label for="name">Naam</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Jouw e-mail</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Bericht</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="text" name="_gotcha" class="honeypot-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <button type="submit">Verzenden</button>
+    </form>
+    <p class="form-note">Berichten worden privé verzonden — niets dat hier wordt ingediend, wordt op de site gepubliceerd.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Verkennen</h4>
+        <ul>
+          <li><a href="/nl/tea/">Thee</a></li>
+          <li><a href="/nl/coffee/">Koffie</a></li>
+          <li><a href="/tea-specialists.html">Theespecialisten</a></li>
+          <li><a href="/papers-science.html">Wetenschap &amp; publicaties</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Thee per continent</h4>
+        <ul>
+          <li><a href="/nl/continents/asia.html">Azië</a></li>
+          <li><a href="/nl/continents/africa.html">Afrika</a></li>
+          <li><a href="/nl/continents/europe.html">Europa</a></li>
+          <li><a href="/nl/continents/north-america.html">Noord-Amerika</a></li>
+          <li><a href="/nl/continents/south-america.html">Zuid-Amerika</a></li>
+          <li><a href="/nl/continents/oceania.html">Oceanië</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Over</h4>
+        <ul>
+          <li><a href="/nl/about.html">Over Kemeya</a></li>
+          <li><a href="/nl/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">© <span id="y"></span> Kemeya Azezi.</p>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

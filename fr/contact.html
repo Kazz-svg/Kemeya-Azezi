@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Kemeya Azezi</title>
+<meta name="description" content="Contactez Kemeya Azezi.">
+<link rel="canonical" href="https://kemeyaazezi.com/fr/contact.html">
+<link rel="alternate" hreflang="en" href="https://kemeyaazezi.com/contact.html">
+<link rel="alternate" hreflang="fr" href="https://kemeyaazezi.com/fr/contact.html">
+<link rel="alternate" hreflang="nl" href="https://kemeyaazezi.com/nl/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://kemeyaazezi.com/contact.html">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/fr/">Kemeya Azezi<span class="sub">Thé &amp; café, origines &amp; science</span></a>
+    <nav class="main-nav" aria-label="Principal">
+      <ul>
+        <li><a href="/fr/">Accueil</a></li>
+        <li><a href="/fr/about.html">À propos</a></li>
+        <li><a href="/fr/tea/">Thé</a></li>
+        <li><a href="/fr/coffee/">Café</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/fr/contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" aria-label="Langue">
+      <a href="/contact.html">EN</a>
+      <a href="/fr/contact.html" aria-current="true">FR</a>
+      <a href="/nl/contact.html">NL</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="crumbs"><a href="/fr/">Accueil</a> / Contact</p>
+    <h1>Contact</h1>
+    <p>Envoyez un message via le formulaire ci-dessous — aucune adresse e-mail n'est publiée, et il m'arrive directement.</p>
+
+    <form class="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Votre e-mail</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="text" name="_gotcha" class="honeypot-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <button type="submit">Envoyer</button>
+    </form>
+    <p class="form-note">Les messages sont envoyés en privé — rien de ce qui est soumis ici n'est publié sur le site.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Explorer</h4>
+        <ul>
+          <li><a href="/fr/tea/">Thé</a></li>
+          <li><a href="/fr/coffee/">Café</a></li>
+          <li><a href="/tea-specialists.html">Spécialistes du thé</a></li>
+          <li><a href="/papers-science.html">Science &amp; publications</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Le thé par continent</h4>
+        <ul>
+          <li><a href="/fr/continents/asia.html">Asie</a></li>
+          <li><a href="/fr/continents/africa.html">Afrique</a></li>
+          <li><a href="/fr/continents/europe.html">Europe</a></li>
+          <li><a href="/fr/continents/north-america.html">Amérique du Nord</a></li>
+          <li><a href="/fr/continents/south-america.html">Amérique du Sud</a></li>
+          <li><a href="/fr/continents/oceania.html">Océanie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>À propos</h4>
+        <ul>
+          <li><a href="/fr/about.html">À propos de Kemeya</a></li>
+          <li><a href="/fr/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">© <span id="y"></span> Kemeya Azezi.</p>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
