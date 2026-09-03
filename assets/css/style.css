@@ -132,6 +132,13 @@ nav.main-nav a[aria-current="page"] {
   max-width: 640px;
 }
 
+main .tagline {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  max-width: 640px;
+}
+
 .badge-row {
   margin-top: 1rem;
   display: flex;
