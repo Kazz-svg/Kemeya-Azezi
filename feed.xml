@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Kemeya Azezi: Blog</title>
+<link>https://kemeyaazezi.com/blog/</link>
+<description>Notes, tasting impressions and things worth learning about tea and coffee, from Kemeya Azezi.</description>
+<language>en</language>
+<atom:link href="https://kemeyaazezi.com/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Water Temperature Is the Most Underrated Variable in a Cup of Tea</title>
+<link>https://kemeyaazezi.com/blog/water-temperature.html</link>
+<guid>https://kemeyaazezi.com/blog/water-temperature.html</guid>
+<pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+<description>Why boiling water ruins delicate teas, the right temperature for each style, and simple ways to get it right without a thermometer.</description>
+</item>
+</channel>
+</rss>
