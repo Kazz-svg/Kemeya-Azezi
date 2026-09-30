@@ -1,18 +1,23 @@
 /* Kemeya Azezi — kemeyaazezi.com
    A personal, non-commercial passion project about tea (and coffee). */
 
-:root {
-  --ink: #2b2118;
-  --ink-soft: #5a4d3f;
-  --paper: #faf6ef;
-  --paper-alt: #f1e9da;
-  --accent: #7a5230;
-  --accent-dark: #4e3319;
-  --leaf: #5c7a4e;
-  --border: #e3d7c0;
-  --max-width: 880px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap");
 
+:root {
+  --ink: #2a2622;
+  --ink-soft: #5e564d;
+  --paper: #fbf9f5;
+  --paper-alt: #f4f0e8;
+  --accent: #8a5a36;
+  --accent-dark: #6b4226;
+  --leaf: #6b4226;
+  --border: #e4ddd1;
+  --rule: #cfc6b8;
+  --max-width: 1040px;
+  --measure: 42rem;
+  --serif: "Cormorant Garamond", "Iowan Old Style", Garamond, Georgia, serif;
+  --sans: "Source Sans 3", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -21,9 +26,10 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
-  line-height: 1.65;
+  font-family: var(--sans);
+  line-height: 1.7;
   font-size: 18px;
+  -webkit-font-smoothing: antialiased;
 }
 
 a { color: var(--accent-dark); }
@@ -337,4 +343,75 @@ footer.site-footer a:hover { color: var(--accent-dark); }
 @media (max-width: 640px) {
   body { font-size: 16.5px; }
   .hero h1 { font-size: 1.9rem; }
+}
+
+/* ---- Editorial refinements ---- */
+a { text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent-dark); outline-offset: 3px; border-radius: 1px; }
+
+header.site-header { background: var(--paper); border-bottom: 1px solid var(--rule); }
+.site-header .wrap { padding-top: 1.6rem; padding-bottom: 1.4rem; }
+.brand { font-family: var(--serif); font-weight: 600; font-size: 1.7rem; letter-spacing: 0.01em; color: var(--ink); line-height: 1.1; }
+.brand .sub { font-family: var(--sans); font-size: 0.66rem; letter-spacing: 0.2em; margin-top: 0.35rem; }
+nav.main-nav ul { gap: 1.6rem; }
+nav.main-nav a { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; border-bottom-width: 1px; color: var(--ink-soft); }
+nav.main-nav a:hover, nav.main-nav a[aria-current="page"] { border-bottom-color: var(--ink); color: var(--ink); }
+.lang-switch { font-size: 0.75rem; letter-spacing: 0.1em; }
+.lang-switch a { border-radius: 0; padding: 0.1rem 0.25rem; }
+.lang-switch a[aria-current="true"] { background: none; color: var(--ink); border-bottom: 1px solid var(--ink); }
+
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; color: var(--ink); letter-spacing: 0.005em; line-height: 1.15; }
+h1 { font-size: 3rem; font-weight: 500; }
+h2 { font-size: 2rem; font-weight: 500; margin-top: 3rem; }
+h3 { font-size: 1.4rem; }
+
+.hero { padding: 5rem 0 3.5rem; border-bottom: 1px solid var(--rule); }
+.hero h1 { font-size: 3.6rem; font-weight: 500; color: var(--ink); max-width: 20ch; margin-bottom: 1rem; }
+.hero .tagline, main .tagline { font-size: 1.2rem; color: var(--ink-soft); max-width: var(--measure); }
+main .tagline { font-family: var(--serif); font-size: 1.35rem; }
+
+main { padding: 3.5rem 0 5rem; }
+main .wrap > p, main .wrap > ul, main .wrap > ol, main .wrap > blockquote,
+main .wrap > h2, main .wrap > h3 { max-width: var(--measure); }
+
+blockquote { background: none; border-left: 1px solid var(--rule); padding: 0.25rem 0 0.25rem 1.5rem; font-family: var(--serif); font-size: 1.3rem; color: var(--ink); }
+
+.badge { background: none; border: 0; border-radius: 0; padding: 0; color: var(--ink-soft); letter-spacing: 0.14em; }
+.badge + .badge::before { content: "\00b7"; margin-right: 0.5rem; }
+
+.grid { gap: 0 2.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); border-top: 1px solid var(--rule); margin: 1.5rem 0 2rem; }
+.card { background: none; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; padding: 1.5rem 0 1.6rem; transition: color .2s; }
+.card:hover { border-color: var(--border); }
+.card:hover h3 { color: var(--accent); }
+.card h3 { font-size: 1.45rem; color: var(--ink); margin-bottom: 0.45rem; }
+.card p { font-size: 0.95rem; line-height: 1.6; }
+
+.post-hero-img { border-radius: 0; border: 0; margin: 2rem 0; }
+.post-list li { padding: 1.4rem 0; }
+.post-list time { font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.post-list a { font-family: var(--serif); font-size: 1.5rem; color: var(--ink); }
+
+footer.site-footer { background: var(--paper-alt); border-top: 1px solid var(--rule); padding: 3.5rem 0 2.5rem; }
+footer.site-footer h4 { font-family: var(--sans); font-weight: 600; color: var(--ink); font-size: 0.72rem; letter-spacing: 0.18em; margin-bottom: 1rem; }
+footer.site-footer a:hover { color: var(--ink); text-decoration: underline; }
+.legal { border-top-color: var(--rule); }
+
+.crumbs { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; }
+.crumbs a { text-decoration: none; }
+.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+
+.contact-form input, .contact-form textarea { border-radius: 0; border: 0; border-bottom: 1px solid var(--rule); background: transparent; padding-left: 0; }
+.contact-form input:focus-visible, .contact-form textarea:focus-visible { outline: none; border-bottom: 2px solid var(--ink); }
+.contact-form button { border-radius: 0; background: var(--ink); letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.8rem; padding: 0.85rem 1.8rem; }
+.contact-form button:hover { background: var(--accent-dark); }
+
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .hero { padding: 3rem 0 2.25rem; }
+  .hero h1 { font-size: 2.4rem; }
+  h1 { font-size: 2.3rem; }
+  h2 { font-size: 1.65rem; }
+  nav.main-nav ul { gap: 0.6rem 1.1rem; }
+  main { padding: 2.25rem 0 3.5rem; }
 }
