@@ -415,3 +415,16 @@ footer.site-footer a:hover { color: var(--ink); text-decoration: underline; }
   nav.main-nav ul { gap: 0.6rem 1.1rem; }
   main { padding: 2.25rem 0 3.5rem; }
 }
+
+/* Tea by continent: clickable world map */
+.tea-map { margin: 1.5rem 0 2rem; }
+.tea-map svg { display: block; width: 100%; height: auto; }
+.tea-map__region path { fill: #e8dfd6; stroke: var(--paper); stroke-width: 1; transition: fill .15s ease; }
+.tea-map__region text { font-family: var(--serif); font-size: 15px; fill: var(--ink-soft); text-anchor: middle; pointer-events: none; opacity: 0; transition: opacity .15s ease; }
+a.tea-map__region { cursor: pointer; outline: none; }
+a.tea-map__region:hover path, a.tea-map__region:focus-visible path { fill: var(--accent); }
+a.tea-map__region:focus-visible path { stroke: var(--accent-dark); stroke-width: 2; }
+a.tea-map__region:hover text, a.tea-map__region:focus-visible text { opacity: 1; fill: var(--ink); font-weight: 600; paint-order: stroke; stroke: var(--paper); stroke-width: 4px; }
+.tea-map__region--empty path { fill: #f0f0f0; }
+.tea-map__region--empty text { opacity: 1; fill: #b5b5b5; font-size: 13px; }
+.tea-map figcaption { font-size: .9rem; color: var(--ink-soft); text-align: center; margin-top: .5rem; }
