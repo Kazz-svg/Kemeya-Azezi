@@ -4,13 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap");
 
 :root {
-  --ink: #2a2622;
-  --ink-soft: #5e564d;
+  --ink: #111;
+  --ink-soft: #555;
   --paper: #fff;
   --paper-alt: #f7f7f7;
-  --accent: #8a5a36;
-  --accent-dark: #6b4226;
-  --leaf: #6b4226;
+  --accent: #1546e0;
+  --accent-dark: #111;
+  --leaf: #555;
   --border: #e5e5e5;
   --rule: #d0d0d0;
   --max-width: 1040px;
@@ -32,7 +32,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--accent-dark); }
+a { color: var(--ink); text-decoration-color: var(--rule); text-underline-offset: 0.2em; }
+body { border-top: 4px solid var(--accent); }
 a:hover { color: var(--leaf); }
 
 img { max-width: 100%; display: block; }
@@ -348,7 +349,7 @@ footer.site-footer a:hover { color: var(--accent-dark); }
 /* ---- Editorial refinements ---- */
 a { text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
 a:hover { color: var(--accent); }
-:focus-visible { outline: 2px solid var(--accent-dark); outline-offset: 3px; border-radius: 1px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 1px; }
 
 header.site-header { background: var(--paper); border-bottom: 1px solid var(--rule); }
 .site-header .wrap { padding-top: 1.6rem; padding-bottom: 1.4rem; }
@@ -357,9 +358,10 @@ header.site-header { background: var(--paper); border-bottom: 1px solid var(--ru
 nav.main-nav ul { gap: 1.6rem; }
 nav.main-nav a { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; border-bottom-width: 1px; color: var(--ink-soft); }
 nav.main-nav a:hover, nav.main-nav a[aria-current="page"] { border-bottom-color: var(--ink); color: var(--ink); }
+nav.main-nav a[aria-current="page"] { border-bottom: 2px solid var(--accent); }
 .lang-switch { font-size: 0.75rem; letter-spacing: 0.1em; }
 .lang-switch a { border-radius: 0; padding: 0.1rem 0.25rem; }
-.lang-switch a[aria-current="true"] { background: none; color: var(--ink); border-bottom: 1px solid var(--ink); }
+.lang-switch a[aria-current="true"] { background: none; color: var(--ink); border-bottom: 2px solid var(--accent); }
 
 h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; color: var(--ink); letter-spacing: 0.005em; line-height: 1.15; }
 h1 { font-size: 3rem; font-weight: 500; }
@@ -404,7 +406,7 @@ footer.site-footer a:hover { color: var(--ink); text-decoration: underline; }
 .contact-form input, .contact-form textarea { border-radius: 0; border: 0; border-bottom: 1px solid var(--rule); background: transparent; padding-left: 0; }
 .contact-form input:focus-visible, .contact-form textarea:focus-visible { outline: none; border-bottom: 2px solid var(--ink); }
 .contact-form button { border-radius: 0; background: var(--ink); letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.8rem; padding: 0.85rem 1.8rem; }
-.contact-form button:hover { background: var(--accent-dark); }
+.contact-form button:hover { background: var(--accent); }
 
 @media (max-width: 640px) {
   body { font-size: 17px; }
@@ -419,11 +421,11 @@ footer.site-footer a:hover { color: var(--ink); text-decoration: underline; }
 /* Tea by continent: clickable world map */
 .tea-map { margin: 1.5rem 0 2rem; }
 .tea-map svg { display: block; width: 100%; height: auto; }
-.tea-map__region path { fill: #e8dfd6; stroke: var(--paper); stroke-width: 1; transition: fill .15s ease; }
+.tea-map__region path { fill: #d9d9d9; stroke: var(--paper); stroke-width: 1; transition: fill .15s ease; }
 .tea-map__region text { font-family: var(--serif); font-size: 15px; fill: var(--ink-soft); text-anchor: middle; pointer-events: none; opacity: 0; transition: opacity .15s ease; }
 a.tea-map__region { cursor: pointer; outline: none; }
 a.tea-map__region:hover path, a.tea-map__region:focus-visible path { fill: var(--accent); }
-a.tea-map__region:focus-visible path { stroke: var(--accent-dark); stroke-width: 2; }
+a.tea-map__region:focus-visible path { stroke: var(--ink); stroke-width: 2; }
 a.tea-map__region:hover text, a.tea-map__region:focus-visible text { opacity: 1; fill: var(--ink); font-weight: 600; paint-order: stroke; stroke: var(--paper); stroke-width: 4px; }
 .tea-map__region--empty path { fill: #f0f0f0; }
 .tea-map__region--empty text { opacity: 1; fill: #b5b5b5; font-size: 13px; }
