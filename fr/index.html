@@ -18,19 +18,29 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Kemeya Azezi",
-  "url": "https://kemeyaazezi.com/",
-  "description": "Écrit sur l'histoire, les origines et la science du thé et du café.",
-  "homeLocation": [
-    { "@type": "City", "name": "Londres" },
-    { "@type": "City", "name": "Bruxelles" }
-  ],
-  "knowsAbout": ["Thé", "Café", "Histoire du thé", "Culture du thé", "Science du thé"],
-  "sameAs": [
-    "https://x.com/KAzezi40969",
-    "https://www.youtube.com/@KemeyaAzezi",
-    "https://medium.com/@k.azezifin"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://kemeyaazezi.com/#person",
+      "name": "Kemeya Azezi",
+      "url": "https://kemeyaazezi.com/",
+      "description": "Auteur sur le thé et le café, qui écrit sur l'histoire, les origines et la science du thé et du café.",
+      "sameAs": [
+        "https://x.com/KAzezi40969",
+        "https://www.youtube.com/@KemeyaAzezi",
+        "https://medium.com/@k.azezifin"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kemeyaazezi.com/#website",
+      "name": "Kemeya Azezi",
+      "url": "https://kemeyaazezi.com/",
+      "inLanguage": "fr",
+      "publisher": {
+        "@id": "https://kemeyaazezi.com/#person"
+      }
+    }
   ]
 }
 </script>
