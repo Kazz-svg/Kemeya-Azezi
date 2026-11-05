@@ -19,19 +19,29 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Kemeya Azezi",
-  "url": "https://kemeyaazezi.com/",
-  "description": "Writes about the history, origins and science of tea and coffee.",
-  "homeLocation": [
-    { "@type": "City", "name": "London" },
-    { "@type": "City", "name": "Brussels" }
-  ],
-  "knowsAbout": ["Tea", "Coffee", "Tea history", "Tea culture", "Tea science"],
-  "sameAs": [
-    "https://x.com/KAzezi40969",
-    "https://www.youtube.com/@KemeyaAzezi",
-    "https://medium.com/@k.azezifin"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://kemeyaazezi.com/#person",
+      "name": "Kemeya Azezi",
+      "url": "https://kemeyaazezi.com/",
+      "description": "Tea and coffee writer covering the history, origins and science of tea and coffee.",
+      "sameAs": [
+        "https://x.com/KAzezi40969",
+        "https://www.youtube.com/@KemeyaAzezi",
+        "https://medium.com/@k.azezifin"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kemeyaazezi.com/#website",
+      "name": "Kemeya Azezi",
+      "url": "https://kemeyaazezi.com/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://kemeyaazezi.com/#person"
+      }
+    }
   ]
 }
 </script>

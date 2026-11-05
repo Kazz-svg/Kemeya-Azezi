@@ -18,19 +18,29 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Kemeya Azezi",
-  "url": "https://kemeyaazezi.com/",
-  "description": "Schrijft over de geschiedenis, oorsprong en wetenschap van thee en koffie.",
-  "homeLocation": [
-    { "@type": "City", "name": "Londen" },
-    { "@type": "City", "name": "Brussel" }
-  ],
-  "knowsAbout": ["Thee", "Koffie", "Geschiedenis van thee", "Theecultuur", "Theewetenschap"],
-  "sameAs": [
-    "https://x.com/KAzezi40969",
-    "https://www.youtube.com/@KemeyaAzezi",
-    "https://medium.com/@k.azezifin"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://kemeyaazezi.com/#person",
+      "name": "Kemeya Azezi",
+      "url": "https://kemeyaazezi.com/",
+      "description": "Thee- en koffieschrijver over de geschiedenis, oorsprong en wetenschap van thee en koffie.",
+      "sameAs": [
+        "https://x.com/KAzezi40969",
+        "https://www.youtube.com/@KemeyaAzezi",
+        "https://medium.com/@k.azezifin"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kemeyaazezi.com/#website",
+      "name": "Kemeya Azezi",
+      "url": "https://kemeyaazezi.com/",
+      "inLanguage": "nl",
+      "publisher": {
+        "@id": "https://kemeyaazezi.com/#person"
+      }
+    }
   ]
 }
 </script>
